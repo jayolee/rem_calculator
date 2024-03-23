@@ -1,0 +1,48 @@
+[data-theme="light"] {
+  --background: #fff;
+  --text-primary: #161616;
+  --text-secondary: #525252;
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-primary: #ffffff;
+  --text-secondary: #e6e6e6;;
+}
+
+.App {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  > :last-child {
+    margin-top: 1rem;
+    color:var(--text-secondary);
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: .875rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.data-table {
+  margin-top: 3rem;
+
+  > :first-child {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+
+    &.alignLeft {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    >label {
+        margin-right: .25rem;
+
+        :last-child {
+            font-size: .875rem;
+        }
+    }
+}
