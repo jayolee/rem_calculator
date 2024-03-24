@@ -17,10 +17,7 @@ import { defaultValues } from '../constant';
 import { valueContext } from '../ValueContext';
 
 const copyText = async (value) => {
-    const type = "text/plain";
-    const blob = new Blob([value], { type });
-    const data = [new ClipboardItem({ [type]: blob })];
-    await navigator.clipboard.write(data);
+    await navigator.clipboard.writeText(value);
 }
 
 const getColVals = (value, base) => {

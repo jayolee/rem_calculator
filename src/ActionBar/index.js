@@ -15,18 +15,16 @@ const SaveCheckbox = () => {
     const { addedValues } = useContext(valueContext)
     const [isChecked, setChecked] = useState(!!localStorage.getItem(STORAGE_NAME))
 
-    const changeHandler = (e) => { setChecked(e.target.checked) }
+    const changeHandler = (e) => {
+        const checked = e.target.checked;
+        setChecked(checked)
+        if (checked) localStorage.setItem(STORAGE_NAME, JSON.stringify([...addedValues.current]))
+        else localStorage.removeItem(STORAGE_NAME)
+    }
 
     useEffect(() => {
-        const copiedValues = [...addedValues.current]
-        const doSave = isChecked
-
-        return () => {
-            if (doSave) { localStorage.setItem(STORAGE_NAME, JSON.stringify(copiedValues)) } else {
-                localStorage.removeItem(STORAGE_NAME)
-            }
-        }
-    }, [])
+        if (isChecked && addedValues.current) return (() => localStorage.setItem(STORAGE_NAME, JSON.stringify( addedValues.current)))
+    }, [addedValues.current])
 
     return <Checkbox inputProps={{ 'aria-label': 'Save new to localStorage' }} checked={isChecked} size="small" onChange={changeHandler} />
 }

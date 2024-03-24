@@ -10,7 +10,7 @@ import { valueContext } from "../ValueContext";
 
 export default function AddModal({isOpen, handleClose}) {
     const [error, setError] = useState(undefined)
-    const {values, addValue,  addedValues} = useContext(valueContext)
+    const {values, addValue} = useContext(valueContext)
 
   return (
     <>
@@ -30,7 +30,6 @@ export default function AddModal({isOpen, handleClose}) {
                 return
             }
             addValue(newSize)
-            addedValues.current = [...addedValues.current, newSize]
             handleClose();
           },
         }}
