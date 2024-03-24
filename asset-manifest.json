@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rem_calculator/static/css/main.fd6c97fa.css",
-    "main.js": "/rem_calculator/static/js/main.d631554e.js",
+    "main.js": "/rem_calculator/static/js/main.67feff03.js",
     "static/js/453.ee300545.chunk.js": "/rem_calculator/static/js/453.ee300545.chunk.js",
     "static/media/roboto-latin-500-normal.woff2": "/rem_calculator/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/rem_calculator/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -61,11 +61,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/rem_calculator/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/rem_calculator/index.html",
     "main.fd6c97fa.css.map": "/rem_calculator/static/css/main.fd6c97fa.css.map",
-    "main.d631554e.js.map": "/rem_calculator/static/js/main.d631554e.js.map",
+    "main.67feff03.js.map": "/rem_calculator/static/js/main.67feff03.js.map",
     "453.ee300545.chunk.js.map": "/rem_calculator/static/js/453.ee300545.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd6c97fa.css",
-    "static/js/main.d631554e.js"
+    "static/js/main.67feff03.js"
   ]
 }
