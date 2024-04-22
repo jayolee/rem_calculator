@@ -22,7 +22,7 @@ const copyText = async (value) => {
 
 const getColVals = (value, base) => {
     const isValueDefault = defaultValues.includes(value)
-    return ({ "pixel-size": value, ratio: Math.floor(value / base * 10000) / 10000, "action-copy": isValueDefault, "action-delete": !isValueDefault })
+    return ({ "pixel-size": value, ratio: Math.floor(value / base * 10000) / 10000, "action-copy": true, "action-delete": !isValueDefault })
 }
 
 const getIconButton = (type, state, action) => {
